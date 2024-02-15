@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection with MongoDB
-const mongoURL=process.env.mongoDB_URL
+const mongoURL=process.env.MONGODB_URL
 mongoose.connect(mongoURL)
 
 // API Creation
