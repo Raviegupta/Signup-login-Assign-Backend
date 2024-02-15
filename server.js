@@ -103,7 +103,7 @@ app.use('/images', express.static('upload/images'))
 app.post('/upload', upload.single('product'), (req, res)=>{
     res.json({
         success: 1,
-        image_url: `https://blinkit-imager.onrender.com:${port}/images/${req.file.filename}`
+        image_url: `https://blinkit-imager.onrender.com/images/${req.file.filename}`
     })
 })
 
